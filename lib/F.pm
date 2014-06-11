@@ -12,6 +12,8 @@ our @EXPORT = @EXPORT_OK;
 sub f {
     my ($string) = @_;
 
+    $string =~ s/(.?\*+.?)//g;
+
     return $string;
 }
 
